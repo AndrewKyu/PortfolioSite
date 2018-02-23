@@ -4,20 +4,40 @@
 		<title>Andrew Kyu | Aspiring Software Engineer</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
         <link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 		<script src="js/page.js"></script>
 	</head>
 	<header>
+		<!--
 		<ul class="nav nav-tabs">
 			  <li role="presentation" class="active"><a href="index.html">Home</a></li>
 			  <li role="presentation"><a href="about.html">About</a></li>
 			  <li role="presentation"><a href="skills.html">Skills</a></li>
 			  <li role="presentation"><a href="experience.html">Experience</a></li>
+			  <li role="presentation"><a href="https://github.com/AndrewKyu">Github</a></li>
 			  <li role="presentation"><a href="contact.html">Contact</a></li>
 		</ul>
+	-->
+
+	 	<div class="navbar-fixed">
+		 	 <nav>
+		      	<div class="nav-wrapper">
+		        	<ul class="right hide-on-med-and-down">
+		          		<li><a href="#">About</a></li>
+		          		<li><a href="#">Skills</a></li>
+				        <li><a href="#">Experience</a></li>
+				        <li><a href="#">Github</a></li>
+				        <li><a href="#">Contact</a></li>
+		        	</ul>
+		      </div>
+	    	</nav>
+  		</div>
 	</header>
 	<body>
+		<!--About me-->
 		<div class="about">
 			<img src="img/profile.jpg" alt="Japan Trip" class="profile-pic">
 			<div class="about-content">
@@ -28,6 +48,7 @@
 				<p>On days that I shut off my developer's brain, you can find me going out on an adventure, whether it'd be traveling abroad or even wandering around locally in nearby cities. I love seeing things in different perspectives, which is why I enjoy going abroad to another country to experience different lifestyles. </p>
 			</div>
 		</div>
+		<!--Skills-->
 		<div class="skill">
 			<h1 style="text-align: center;"> Technical Skills</h1>
 			<div id="bars">
@@ -54,19 +75,19 @@
 			</div>
 			<h1 style="text-align: center;">Tools</h1>
 				<div id="bars">
-				<div class="bar" data-percent="75">
+				<div class="bar" data-percent="35">
 					<h3>MongoDB</h3>
 					<canvas class="bar-circle" width="70" height="70"></canvas>
 				</div>
-				<div class="bar" data-percent="75">
+				<div class="bar" data-percent="35">
 					<h3>Node.js</h3>
 					<canvas class="bar-circle" width="70" height="70"></canvas>
 				</div>
-				<div class="bar" data-percent="25">
+				<div class="bar" data-percent="45">
 					<h3>Express.js</h3>
 					<canvas class="bar-circle" width="70" height="70"></canvas>
 				</div>
-				<div class="bar" data-percent="70">
+				<div class="bar" data-percent="25">
 					<h3>Angular.js</h3>
 					<canvas class="bar-circle" width="70" height="70"></canvas>
 				</div>
