@@ -40,3 +40,8 @@
 	display: block;
 	margin: 0.7em auto;
 }
+
+p{
+	font-family: open sans;
+	font-size: 15px;
+}
