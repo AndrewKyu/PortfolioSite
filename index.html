@@ -10,27 +10,27 @@
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 		<script src="js/page.js"></script>
+		<script src="js/clicking.js"></script>
 	</head>
 	<header>
 
 	 	<div class="navbar-fixed">
 		 	 <nav>
-		      	<div class="nav-wrapper">
+		      	<div class="nav-wrapper" style="background: #1E90FF;">
 		        	<ul class="right hide-on-med-and-down">
-		          		<li><a href="#" style="text-decoration: none;">About</a></li>
-		          		<li><a href="#" style="text-decoration: none;">Skills</a></li>
-				        <li><a href="#" style="text-decoration: none;">Experience</a></li>
+		          		<li><a id="about-sec" href="#about" style="text-decoration: none;">About</a></li>
+		          		<li><a id="skills-sec" href="#skill" style="text-decoration: none;">Skills</a></li>
+				        <li><a id="experience-sec" style="text-decoration: none;">Experience</a></li>
 				        <li><a target="_blank" href="https://github.com/AndrewKyu" style="text-decoration: none;">Github</a></li>
-				        <li><a href="#" style="text-decoration: none;">Contact</a></li>
+				        <li><a id="contact-sec" href="#contact" style="text-decoration: none;">Contact</a></li>
 		        	</ul>
 		      </div>
 	    	</nav>
   		</div>
 	</header>
 	<body>
-		<!--<h1 style="padding: 10px;">Software Developer by Day, Hacker by Night</h1>-->
 		<!--About me-->
-		<div class="about">
+		<div id="about">
 			<img src="img/profile.jpg" alt="Japan Trip" class="profile-pic" style="width: 15%;">
 			<div class="about-content">
 				<p>Hey, I'm Andrew Kyu and welcome to my website! I was born and raised in the heart of Silicon Valley where I developed a strong interest in technology. As a current student at San Jose State University, pursuing a Bachelor of Science degree in Computer Engineering, I've established extensive knowledge in both software and hardware development. My passion lies in building innovative DIY gadgets and problem solving, which brings together my creative and technical expertise. 
@@ -41,7 +41,7 @@
 			</div>
 		</div>
 		<!--Skills-->
-		<div class="skill">
+		<div id="skill">
 			<h1 style="text-align: center;"> Technical Skills</h1>
 			<div id="bars">
 				<div class="bar" data-percent="75">
@@ -61,7 +61,7 @@
 					<canvas class="bar-circle" width="70" height="70"></canvas>
 				</div>
 				<div class="bar" data-percent="50">
-					<h3>Swift3</h3>
+					<h3>Swift4</h3>
 					<canvas class="bar-circle" width="70" height="70"></canvas>
 				</div>
 			</div>
@@ -88,10 +88,15 @@
 					<canvas class="bar-circle" width="70" height="70"></canvas>
 				</div>
 		</div>
+		<div id="experience">
+			
+		</div>
 	</body>
 	<footer>
 		<div class="footer-content">
-			
+			<div id="contact">
+				CONTACT SECTION
+			</div>
 		</div>
 	</footer>
 </html>
