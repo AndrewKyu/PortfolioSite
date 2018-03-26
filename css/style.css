@@ -46,10 +46,15 @@ p{
 	font-size: 15px;
 }
 #contact{
-	width: 100%;
-	height: 20%;
 	/*background-color: #1E90FF;*/
 	text-align: center;
 	padding: 10px 200px 10px 200px;
 }
-
+.footer-content{
+	background-color: #1E90FF;
+	height: 20%;
+	width: 100%;
+	text-align: center;
+	color: white;
+	padding: 20px 0 50px 0;
+}
