@@ -9,8 +9,7 @@
         <link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-		<script src="js/page.js"></script>
-		<script src="js/clicking.js"></script>
+		<script src="js/page.js"></script> 
 	</head>
 	<header>
 
@@ -99,11 +98,11 @@
 				    <form class="col s12" method="post" action="contact-form-handler.php">
 				      <div class="row">
 				        <div class="input-field col s6">
-				          <input id="icon_prefix" type="text" class="validate">
-				          <label for="icon_prefix">Full Name</label>
+				          <input id="fullName" type="text" class="validate">
+				          <label for="fullName">Full Name</label>
 				        </div>
 				        <div class="input-field col s6">
-				          <input id="icon_email" type="tel" class="validate">
+				          <input id="emailAddress" type="tel" class="validate">
 				          <label>Email</label>
 				        </div>
 				      </div>
@@ -114,15 +113,18 @@
 				    <form class="col s12">
 				      <div class="row">
 				        <div class="input-field col s12">
-				          <textarea id="textarea1" class="materialize-textarea"></textarea>
-				          <label for="textarea1">Text Area</label>
+				          <textarea id="messageSent" class="materialize-textarea"></textarea>
+				          <label for="messageSent">Text Area</label>
 				        </div>
 				      </div>
 				    </form>
 				  </div>
 
-				  <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+				  <button class="btn waves-effect waves-light" id="submit_message" type="submit" name="action">Submit
 				  </button>
+
+				  <scipt src="js/sendEmail.js"></scipt>
+
 			</div>
 	</body>
 	<footer>
