@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Andrew Kyu | Aspiring Software Engineer</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<script src="js/page.js"></script>
+</head>
+<header>
+
+	<div class="navbar-fixed">
+		<nav>
+			<div class="nav-wrapper" style="background: #1E90FF;">
+				<ul class="right hide-on-med-and-down">
+					<li>
+						<a id="about-sec" href="#about" style="text-decoration: none;">About</a>
+					</li>
+					<li>
+						<a id="skills-sec" href="#skill" style="text-decoration: none;">Skills</a>
+					</li>
+					<li>
+						<a id="experience-sec" style="text-decoration: none;">Experience</a>
+					</li>
+					<li>
+						<a href="#resume" style="text-decoration: none;">Resume</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://github.com/AndrewKyu" style="text-decoration: none;">Github</a>
+					</li>
+					<li>
+						<a id="contact-sec" href="#contact" style="text-decoration: none;">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</header>
+
+<body>
+	<!--About me-->
+	<div id="about">
+		<img src="img/profile.jpg" alt="Japan Trip" class="profile-pic" style="width: 15%;">
+		<div class="about-content">
+			<p>Hey, I'm Andrew Kyu and welcome to my website! I was born and raised in the heart of Silicon Valley where I developed
+				a strong interest in technology. As a current student at San Jose State University, pursuing a Bachelor of Science degree
+				in Computer Engineering, I've established extensive knowledge in both software and hardware development. My passion lies
+				in building innovative DIY gadgets and problem solving, which brings together my creative and technical expertise.
+			</p>
+			<p>You'll see later on, most of my projects are primarily within the scope of iOS development and web development as both
+				of them are what i'm passionate about. My goal as a developer is to create applications that will better the lives of
+				others around me, and what better way is there to approach this than to use my technical skills to build a better tomorrow.
+			</p>
+			<p>On days that I shut off my developer's brain, you can find me going out on an adventure, whether it'd be traveling abroad
+				or even wandering around locally in nearby cities. I love seeing things in different perspectives, which is why I enjoy
+				going abroad to another country to experience different lifestyles. </p>
+		</div>
+	</div>
+	<!--Skills-->
+	<div id="skill">
+		<h1 style="text-align: center;"> Technical Skills</h1>
+		<div id="bars">
+			<div class="bar" data-percent="75">
+				<h3>CSS</h3>
+				<canvas class="bar-circle" width="70" height="70"></canvas>
+			</div>
+			<div class="bar" data-percent="75">
+				<h3>HTML5</h3>
+				<canvas class="bar-circle" width="70" height="70"></canvas>
+			</div>
+			<div class="bar" data-percent="25">
+				<h3>JavaScript</h3>
+				<canvas class="bar-circle" width="70" height="70"></canvas>
+			</div>
+			<div class="bar" data-percent="70">
+				<h3>C++</h3>
+				<canvas class="bar-circle" width="70" height="70"></canvas>
+			</div>
+			<div class="bar" data-percent="50">
+				<h3>Swift4</h3>
+				<canvas class="bar-circle" width="70" height="70"></canvas>
+			</div>
+		</div>
+		<h1 style="text-align: center;">Tools</h1>
+		<div id="bars">
+			<div class="bar" data-percent="35">
+				<h3>MongoDB</h3>
+				<canvas class="bar-circle" width="70" height="70"></canvas>
+			</div>
+			<div class="bar" data-percent="35">
+				<h3>Node.js</h3>
+				<canvas class="bar-circle" width="70" height="70"></canvas>
+			</div>
+			<div class="bar" data-percent="45">
+				<h3>Express.js</h3>
+				<canvas class="bar-circle" width="70" height="70"></canvas>
+			</div>
+			<div class="bar" data-percent="25">
+				<h3>Angular.js</h3>
+				<canvas class="bar-circle" width="70" height="70"></canvas>
+			</div>
+			<div class="bar" data-percent="50">
+				<h3>Cocoapods</h3>
+				<canvas class="bar-circle" width="70" height="70"></canvas>
+			</div>
+		</div>
+		<div id="experience">
+
+		</div>
+		<div id="contact">
+			<h1 style="color: black;"> Contact me!</h1>
+
+			<div class="row">
+				<form class="col s12" method="POST" action="send">
+					<div class="row">
+						<div class="input-field col s6">
+							<input id="fullName" type="text" class="validate">
+							<label for="fullName">Full Name</label>
+						</div>
+						<div class="input-field col s6">
+							<input id="emailAddress" type="tel" class="validate">
+							<label>Email</label>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="row">
+				<form class="col s12" method="POST" action="send">
+					<div class="row">
+						<div class="input-field col s12">
+							<textarea id="messageSent" class="materialize-textarea"></textarea>
+							<label for="messageSent">Text Area</label>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<button class="btn waves-effect waves-light" id="submit_message" type="submit" name="action">Submit
+			</button>
+
+			<scipt src="js/sendEmail.js"></scipt>
+
+		</div>
+</body>
+<footer>
+
+</footer>
+
+</html>
