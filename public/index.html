@@ -7,10 +7,10 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../public/css/style.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-	<script src="js/page.js"></script>
+	<script src="../public/js/page.js"></script>
 </head>
 <header>
 
@@ -45,7 +45,7 @@
 <body>
 	<!--About me-->
 	<div id="about">
-		<img src="img/profile.jpg" alt="Japan Trip" class="profile-pic" style="width: 15%;">
+		<img src="../public/img/profile.jpg" alt="Japan Trip" class="profile-pic" style="width: 15%;">
 		<div class="about-content">
 			<p>Hey, I'm Andrew Kyu and welcome to my website! I was born and raised in the heart of Silicon Valley where I developed
 				a strong interest in technology. As a current student at San Jose State University, pursuing a Bachelor of Science degree
@@ -114,38 +114,26 @@
 		</div>
 		<div id="contact">
 			<h1 style="color: black;"> Contact me!</h1>
-
+			{{msg}}
 			<div class="row">
 				<form class="col s12" method="POST" action="send">
 					<div class="row">
 						<div class="input-field col s6">
-							<input id="fullName" type="text" class="validate">
+							<input id="fullName" type="text" name="name" class="validate">
 							<label for="fullName">Full Name</label>
 						</div>
 						<div class="input-field col s6">
-							<input id="emailAddress" type="tel" class="validate">
+							<input id="emailAddress" type="email" name="email" class="validate">
 							<label>Email</label>
 						</div>
-					</div>
-				</form>
-			</div>
-
-			<div class="row">
-				<form class="col s12" method="POST" action="send">
-					<div class="row">
 						<div class="input-field col s12">
-							<textarea id="messageSent" class="materialize-textarea"></textarea>
-							<label for="messageSent">Text Area</label>
+							<textarea id="messageSent" class="materialize-textarea" name="message"></textarea>
+							<label for="messageSent">Message</label>
 						</div>
+						<button class="btn waves-effect waves-light" id="submit_message" type="submit">Submit</button>
 					</div>
 				</form>
 			</div>
-
-			<button class="btn waves-effect waves-light" id="submit_message" type="submit" name="action">Submit
-			</button>
-
-			<scipt src="js/sendEmail.js"></scipt>
-
 		</div>
 </body>
 <footer>

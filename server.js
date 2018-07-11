@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/send", (req, res) => {
-  //console.log(req.body);
+  console.log(req.body);
   const output = `
     <p>You have a new contact request</p>
     <h3>Contact Details</h3>
