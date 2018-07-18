@@ -6,6 +6,8 @@ const nodemailer = require("nodemailer");
 
 const app = express();
 
+const PORT = process.env.PORT || 5000;
+
 // View engine setup
 app.engine("handlebars", exphbs());
 app.set("view engine", "handlebars");
@@ -73,4 +75,5 @@ app.post("/send", (req, res) => {
   });
 });
 
-app.listen(3000, () => console.log("Server started"));
+app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
+//app.listen(3000, () => console.log("Server started"));
