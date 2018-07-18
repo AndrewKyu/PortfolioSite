@@ -130,7 +130,7 @@ $(document).ready(function() {
       {
         scrollTop: $(this.hash).offset().top
       },
-      1000
+      900
     );
   });
 });
