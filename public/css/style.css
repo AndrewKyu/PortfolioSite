@@ -28,6 +28,17 @@
   margin-bottom: -50px;
 }
 
+.aboutmelanding {
+  position: relative;
+  background: url("../img/IMG_5627.JPG") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 60vh;
+  margin-top: -24px;
+  margin-bottom: -50px;
+}
+
 .experiencelanding {
   position: relative;
   background: url("../img/success-2081167_960_720.jpg") no-repeat;

@@ -7,19 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <link rel="stylesheet" href="../public/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-    <script src="../public/js/page.js"></script>
     <title>The Story of Andrew Kyu</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-4 sticky-top" id="navbarandrew">
         <div class="container">
-            <a class="navbar-brand" href="landing.html">Andrew Kyu</a>
+            <a class="navbar-brand scroll" href="#landingSection">Andrew Kyu</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-nav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,14 +26,20 @@
 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#aboutme"> About Me
+                        <a class="nav-link scroll" id="aboutMe" href="#aboutMeSection"> About Me
                         </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" id="skills" href="#skillsSection">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" id="experiences" href="#experienceSection">Experiences</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" target="_blank" href="https://github.com/andrewkyu">GitHub</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">Contact</a>
+                        <a class="nav-link scroll" id="contactMe" href="#contactMeSection">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -43,311 +47,340 @@
     </nav>
 
     <!-- Landing -->
-    <div class="landing" style="margin-bottom: 50px;">
-        <div class="dark-overlay landing-inner text-light">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h1 class="display-3 mb-4">The Story of Andrew Kyu
+    <div data-spy="scroll" data-target="#navbarandrew" data-offset="0">
+        <div class="landing">
+            <div class="dark-overlay landing-inner text-light" id="landingSection">
+                <div class="container">
+                    <div class="row" style="margin-top: 80px;">
+                        <div class="col-md-12 text-center">
+                            <h1 class="display-3 mb-4">Welcome to my portfolio page!
+                            </h1>
+                            <hr />
+                            <a href="../public/downloadables/Andrew Kyu Web Developer Resume.pdf" class="btn btn-primary mr-2" target="_blank">Download Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Me Content -->
+        <div class="aboutmecontainer" id="aboutMeSection">
+            <div class="aboutmelanding" style="margin-bottom: 50px;">
+                <div class="dark-overlay landing-inner text-light">
+                    <div class="container" style="margin-top: 80px;">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h1 class="display-3 mb-4">About Me
+                                </h1>
+                                <hr />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-bottom: 60px;">
+                <div class="row" style="padding: 30px;">
+                    <div class="col-lg-6">
+                        <img src="../public/img/IMG_5585.JPG" alt="profilepic" class="profileimg" style="width: 50%; border-radius: 30px; display: block; margin: 0 auto;">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="aboutmetitle" style="text-align: center;">
+                            Here's my story...
                         </h1>
-                        <hr />
-                        <a href="../public/downloadables/Andrew Kyu Web Developer Resume.pdf" class="btn btn-primary mr-2" target="_blank">Download Resume</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- About Me Content -->
-    <div class="container" id="aboutme">
-        <div class="row" style="padding: 30px;">
-            <div class="col-lg-6">
-                <img src="../public/img/IMG_5585.JPG" alt="profilepic" class="profileimg" style="width: 50%; border-radius: 30px; display: block; margin: 0 auto;">
-            </div>
-            <div class="col-lg-6">
-                <h1 class="aboutmetitle">
-                    About Me
-                </h1>
-                <p>Hey, I'm Andrew Kyu and welcome to my website! I was born and raised in the heart of Silicon Valley where
-                    I developed a strong interest in technology. As a current student at San Jose State University, pursuing
-                    a Bachelor of Science degree in Computer Engineering, I've established extensive knowledge in both software
-                    and hardware development. My passion lies in building innovative DIY gadgets and problem solving, which
-                    brings together my creative and technical expertise.
-                </p>
-                <p>You'll see later on, most of my projects are primarily within the scope of iOS development and web development
-                    as both of them are what i'm passionate about. My goal as a developer is to create applications that
-                    will better the lives of others around me, and what better way is there to approach this than to use
-                    my technical skills to build a better tomorrow.
-                </p>
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Skills -->
-    <div class="skillscontainer">
-        <div class="skillslanding" style="margin-bottom: 50px;">
-            <div class="dark-overlay landing-inner text-light">
-                <div class="container" style="margin-top: 80px;">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <h1 class="display-3 mb-4">Skills
-                            </h1>
-                            <hr />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <section>
-            <div id="skill">
-                <h1 style="text-align: center;"> Technical Skills</h1>
-                <div id="bars">
-                    <div class="bar" data-percent="75">
-                        <h3>CSS</h3>
-                        <canvas class="bar-circle" width="70" height="70"></canvas>
-                    </div>
-                    <div class="bar" data-percent="75">
-                        <h3>HTML5</h3>
-                        <canvas class="bar-circle" width="70" height="70"></canvas>
-                    </div>
-                    <div class="bar" data-percent="75">
-                        <h3>JavaScript</h3>
-                        <canvas class="bar-circle" width="70" height="70"></canvas>
-                    </div>
-                    <div class="bar" data-percent="70">
-                        <h3>C++</h3>
-                        <canvas class="bar-circle" width="70" height="70"></canvas>
-                    </div>
-                    <div class="bar" data-percent="50">
-                        <h3>Swift4</h3>
-                        <canvas class="bar-circle" width="70" height="70"></canvas>
-                    </div>
-                </div>
-                <h1 style="text-align: center;">Tools</h1>
-                <div id="bars">
-                    <div class="bar" data-percent="35">
-                        <h3>MongoDB</h3>
-                        <canvas class="bar-circle" width="70" height="70"></canvas>
-                    </div>
-                    <div class="bar" data-percent="35">
-                        <h3>Node.js</h3>
-                        <canvas class="bar-circle" width="70" height="70"></canvas>
-                    </div>
-                    <div class="bar" data-percent="45">
-                        <h3>Express.js</h3>
-                        <canvas class="bar-circle" width="70" height="70"></canvas>
-                    </div>
-                    <div class="bar" data-percent="25">
-                        <h3>React.js</h3>
-                        <canvas class="bar-circle" width="70" height="70"></canvas>
-                    </div>
-                    <div class="bar" data-percent="50">
-                        <h3>Cocoapods</h3>
-                        <canvas class="bar-circle" width="70" height="70"></canvas>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!--Experiences-->
-    <div class="experiencescontainer" style="margin-bottom: 60px;">
-        <div class="experiencelanding" style="margin-bottom: 50px;">
-            <div class="dark-overlay landing-inner text-light">
-                <div class="container" style="margin-top: 80px;">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <h1 class="display-3 mb-4">Experiences
-                            </h1>
-                            <hr />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="card" style="width: 18rem; display: block; margin: 0 auto; ">
-                    <img src="../public/img/talari.jpg" alt="talarinetworks" class="card-img-top">
-                    <div class="card-body" style="background: lightgray">
-                        <h5 class="card-title">Networks Engineer Intern</h5>
-                        <p class="card-text">
-                            <b>
-                                <i>Raleigh, North Carolina</i>
-                            </b>
+                        <br>
+                        <p>Hey, I'm Andrew Kyu and welcome to my website! I was born and raised in the heart of Silicon Valley
+                            where I developed a strong interest in technology. As a current student at San Jose State University,
+                            pursuing a Bachelor of Science degree in Computer Engineering, I've established extensive knowledge
+                            in both software and hardware development. My passion lies in building innovative DIY gadgets
+                            and problem solving, which brings together my creative and technical expertise.
                         </p>
-                        <p class="card-text">June 2014 - August 2014</p>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#networkengineermodal" style="display: block; margin: 0 auto;">Learn More</button>
-
-                        <div class="modal fade" id="networkengineermodal">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h3>Networks Engineer Intern</h3>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <img src="../public/img/northcarolina.jpg" alt="northcarolina" class="northcarolina" style="width: 90%;">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>After my Freshman year of college I was blessed to have been given the opportunity
-                                                    to fly all the way across country to intern in Raleigh, North Carolina.
-                                                    Not only did it develop me professionally in my field, but the experience
-                                                    helped me grow as a person as well. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <p>You'll see later on, most of my projects are primarily within the scope of iOS development and web
+                            development as both of them are what i'm passionate about. My goal as a developer is to create
+                            applications that will better the lives of others around me, and what better way is there to
+                            approach this than to use my technical skills to build a better tomorrow.
+                        </p>
 
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="card" style="width: 18rem; display: block; margin: 0 auto;">
-                    <img src="../public/img/talari.jpg" alt="talarinetworks" class="card-img-top">
-                    <div class="card-body" style="background: lightgray">
-                        <h5 class="card-title">IT and Web Developer Intern</h5>
-                        <p class="card-text">
-                            <b>
-                                <i>San Jose, California</i>
-                            </b>
-                        </p>
-                        <p class="card-text">September, 2014 - Current</p>
-                        <button type="button" class="btn btn-primary" style="display: block; margin: 0 auto;" data-toggle="modal" data-target="#techsupportandwebdevmodal">Learn More</button>
 
-                        <div class="modal fade" id="techsupportandwebdevmodal">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h3>IT and Web Developer Intern</h3>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <img src="../public/img/talarisj.jpg" alt="talarisanjose" class="talarisj" style="width: 90%;">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>After my Freshman year of college I was blessed to have been given the opportunity
-                                                    to fly all the way across country to intern in Raleigh, North Carolina.
-                                                    Not only did it develop me professionally in my field, but the experience
-                                                    helped me grow as a person as well. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div>
+            <!-- Skills -->
+            <div class="skillscontainer" id="skillsSection">
+                <div class="skillslanding" style="margin-bottom: 50px;">
+                    <div class="dark-overlay landing-inner text-light">
+                        <div class="container" style="margin-top: 80px;">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <h1 class="display-3 mb-4">Skills
+                                    </h1>
+                                    <hr />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <section>
+                    <div id="skill">
+                        <h1 style="text-align: center;"> Technical Skills</h1>
+                        <div id="bars">
+                            <div class="bar" data-percent="75">
+                                <h3>CSS</h3>
+                                <canvas class="bar-circle" width="70" height="70"></canvas>
+                            </div>
+                            <div class="bar" data-percent="75">
+                                <h3>HTML5</h3>
+                                <canvas class="bar-circle" width="70" height="70"></canvas>
+                            </div>
+                            <div class="bar" data-percent="75">
+                                <h3>JavaScript</h3>
+                                <canvas class="bar-circle" width="70" height="70"></canvas>
+                            </div>
+                            <div class="bar" data-percent="70">
+                                <h3>C++</h3>
+                                <canvas class="bar-circle" width="70" height="70"></canvas>
+                            </div>
+                            <div class="bar" data-percent="50">
+                                <h3>Swift4</h3>
+                                <canvas class="bar-circle" width="70" height="70"></canvas>
+                            </div>
+                        </div>
+                        <h1 style="text-align: center;">Tools</h1>
+                        <div id="bars">
+                            <div class="bar" data-percent="35">
+                                <h3>MongoDB</h3>
+                                <canvas class="bar-circle" width="70" height="70"></canvas>
+                            </div>
+                            <div class="bar" data-percent="35">
+                                <h3>Node.js</h3>
+                                <canvas class="bar-circle" width="70" height="70"></canvas>
+                            </div>
+                            <div class="bar" data-percent="45">
+                                <h3>Express.js</h3>
+                                <canvas class="bar-circle" width="70" height="70"></canvas>
+                            </div>
+                            <div class="bar" data-percent="25">
+                                <h3>React.js</h3>
+                                <canvas class="bar-circle" width="70" height="70"></canvas>
+                            </div>
+                            <div class="bar" data-percent="50">
+                                <h3>Bootstrap</h3>
+                                <canvas class="bar-circle" width="70" height="70"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-            <div class="col-lg-4">
-                <div class="card" style="width: 18rem; display: block; margin: 0 auto;">
-                    <img src="../public/img/SJSU.png" alt="talarinetworks" class="card-img-top">
-                    <div class="card-body" style="background: lightgray">
-                        <h5 class="card-title">Frontend Engineer Software Engineer Intern</h5>
-                        <p class="card-text">
-                            <b>
-                                <i>San Jose, California</i>
-                            </b>
-                        </p>
-                        <p class="card-text">June, 2018 - Current</p>
-                        <button type="button" data-toggle="modal" data-target="#sjsutelemetry" class="btn btn-primary" style="display: block; margin: 0 auto;">Learn More</button>
 
-                        <div class="modal fade" id="sjsutelemetry">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h3>Frontend Software Engineer Intern</h3>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <img src="../public/img/talarisj.jpg" alt="talarisanjose" class="talarisj" style="width: 90%;">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>After my Freshman year of college I was blessed to have been given the opportunity
-                                                    to fly all the way across country to intern in Raleigh, North Carolina.
-                                                    Not only did it develop me professionally in my field, but the experience
-                                                    helped me grow as a person as well. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div>
+            <!--Experiences-->
+            <div class="experiencescontainer" id="experienceSection" style="margin-bottom: 60px;">
+                <div class="experiencelanding" style="margin-bottom: 50px;">
+                    <div class="dark-overlay landing-inner text-light">
+                        <div class="container" style="margin-top: 80px;">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <h1 class="display-3 mb-4">Experiences
+                                    </h1>
+                                    <hr />
                                 </div>
                             </div>
                         </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- Contact Me -->
-    <div class="contactcontainer">
-        <div class="contactlanding" style="margin-bottom: 50px;">
-            <div class="dark-overlay landing-inner text-light">
-                <div class="container" style="margin-top: 80px;">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <h1 class="display-3 mb-4">Don't be shy!
-                            </h1>
-                            <hr />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <h1 style="text-align: center;">Contact Me</h1>
-        <div style="text-align: center;">{{msg}}</div>
-        <section class="contactme" style=" padding: 60px;">
-            <form class="col-sm-12" method="POST" action="send">
-                <div class="row">
-                    <div class="form-group col-lg-6">
-                        <label for="fullname">Full Name</label>
-                        <input type="text" name="name" class="form-control" id="fullname" placeholder="Enter full name">
-                    </div>
-                    <div class="form-group col-lg-6">
-                        <label>Email Address</label>
-                        <input type="email" name="email" class="form-control" id="emailAddress" placeholder="Enter email address">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-lg-12">
-                        <label for="messageSent">Message</label>
-                        <textarea class="form-control" id="messageSent" name="message" rows="3" placeholder="Shoot me a message!"></textarea>
+                    <div class="col-lg-4">
+                        <div class="card border border-primary" style="width: 18rem; display: block; margin: 0 auto; ">
+                            <img src="../public/img/talari.jpg" alt="talarinetworks" class="card-img-top">
+                            <div class="card-body" style="background: lightgray">
+                                <h5 class="card-title">Networks Engineer Intern</h5>
+                                <p class="card-text">
+                                    <b>
+                                        <i>Raleigh, North Carolina</i>
+                                    </b>
+                                </p>
+                                <p class="card-text">June 2014 - August 2014</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#networkengineermodal" style="display: block; margin: 0 auto;">Learn More</button>
+
+                                <div class="modal fade" id="networkengineermodal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h3>Networks Engineer Intern</h3>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <img src="../public/img/northcarolina.jpg" alt="northcarolina" class="northcarolina" style="width: 90%;">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>After my Freshman year of college I was blessed to have been given
+                                                            the opportunity to fly all the way across country to intern in
+                                                            Raleigh, North Carolina. Not only did it develop me professionally
+                                                            in my field, but the experience helped me grow as a person as
+                                                            well. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border border-primary" style="width: 18rem; display: block; margin: 0 auto;">
+                            <img src="../public/img/talari.jpg" alt="talarinetworks" class="card-img-top">
+                            <div class="card-body" style="background: lightgray">
+                                <h5 class="card-title">IT and Web Developer Intern</h5>
+                                <p class="card-text">
+                                    <b>
+                                        <i>San Jose, California</i>
+                                    </b>
+                                </p>
+                                <p class="card-text">September, 2014 - Current</p>
+                                <button type="button" class="btn btn-primary" style="display: block; margin: 0 auto;" data-toggle="modal" data-target="#techsupportandwebdevmodal">Learn More</button>
+
+                                <div class="modal fade" id="techsupportandwebdevmodal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h3>IT and Web Developer Intern</h3>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <img src="../public/img/talarisj.jpg" alt="talarisanjose" class="talarisj" style="width: 90%;">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>After my internship at Raleigh, North Carolina, I was given the opportunity
+                                                            to work at Talari Network's headquarter back at home in San Jose,
+                                                            CA. On days that I have gaps in between my classes, I would come
+                                                            into office where I would be in charge of analyzing technical
+                                                            issues submitted to the IT helpdesk and providing solutions to
+                                                            decrease redundancy of these issues happening again. </p>
+                                                        <p>One of the biggest projects that I've done accomplished during my
+                                                            time as the IT intern would be the office migration. During this
+                                                            period, me and the rest of the IT team from the North Carolina
+                                                            office would</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border border-primary" style="width: 18rem; display: block; margin: 0 auto;">
+                            <img src="../public/img/SJSU.png" alt="talarinetworks" class="card-img-top">
+                            <div class="card-body" style="background: lightgray">
+                                <h5 class="card-title">Frontend Software Engineer Intern</h5>
+                                <p class="card-text">
+                                    <b>
+                                        <i>San Jose, California</i>
+                                    </b>
+                                </p>
+                                <p class="card-text">June, 2018 - Current</p>
+                                <button type="button" data-toggle="modal" data-target="#sjsutelemetry" class="btn btn-primary" style="display: block; margin: 0 auto;">Learn More</button>
+
+                                <div class="modal fade" id="sjsutelemetry">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h3>Frontend Software Engineer Intern</h3>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <img src="../public/img/talarisj.jpg" alt="talarisanjose" class="talarisj" style="width: 90%;">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>During this internship with San Jose State University, interns would
+                                                            be in charge of creating software and hardware tools for computer
+                                                            engineering students to use for classes. The project that I worked
+                                                            on is called Telementry, which is a software to inspect, visualize
+                                                            and modify variables within an embedded system. </p>
+                                                        <p>During this internship, i've contributed to the UI design of the
+                                                            web appplication where I worked on the frontend of the software
+                                                            using bootstrap, jQuery, and Animate.css framework</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <button class="btn btn-primary" id="submit_message" type="submit" style="margin: 0 auto; display: block;">Submit</button>
-            </form>
-        </section>
 
-        <!-- Footer -->
-        <footer class="bg-dark text-white mt-5 p-4 text-center">
-            Copyright &copy; 2018 Andrew Kyu
-        </footer>
+            </div>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
+            <!-- Contact Me -->
+            <div class="contactcontainer" id="contactMeSection">
+                <div class="contactlanding" style="margin-bottom: 50px;">
+                    <div class="dark-overlay landing-inner text-light">
+                        <div class="container" style="margin-top: 80px;">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <h1 class="display-3 mb-4">Don't be shy!
+                                    </h1>
+                                    <hr />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 style="text-align: center;">Contact Me</h1>
+                <div style="text-align: center;">{{msg}}</div>
+                <section class="contactme" style=" padding: 60px;">
+                    <form class="col-sm-12" method="POST" action="send">
+                        <div class="row">
+                            <div class="form-group col-lg-6">
+                                <label for="fullname">Full Name</label>
+                                <input type="text" name="name" class="form-control" id="fullname" placeholder="Enter full name">
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label>Email Address</label>
+                                <input type="email" name="email" class="form-control" id="emailAddress" placeholder="Enter email address">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-12">
+                                <label for="messageSent">Message</label>
+                                <textarea class="form-control" id="messageSent" name="message" rows="3" placeholder="Shoot me a message!"></textarea>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" id="submit_message" type="submit" style="margin: 0 auto; display: block;">Submit</button>
+                    </form>
+                </section>
+            </div>
+
+            <!-- Footer -->
+            <footer class="bg-dark text-white mt-5 p-4 text-center">
+                Copyright &copy; 2018 Andrew Kyu
+            </footer>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+            <script src="../public/js/page.js"></script>
+
 </body>
 
 </html>
