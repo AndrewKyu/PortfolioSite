@@ -2,3 +2,5 @@
 package-lock.json
 designs
 /config/credentials_dev.js
+/dist
+Procfile
