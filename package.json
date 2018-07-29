@@ -31,6 +31,7 @@
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.4",
     "gulp-imagemin": "^4.1.0",
+    "gulp-nodemon": "^2.2.1",
     "gulp-uglify": "^3.0.1"
   }
 }
