@@ -1,4 +1,4 @@
-.body{
+.body {
   height: 100vh;
 }
 .nav-bar {
@@ -9,7 +9,7 @@
 }
 .landing {
   position: relative;
-  background: url("../img/showcase.jpg") no-repeat;
+  background: url(../img/showcase.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -21,7 +21,7 @@
 }
 .skillslanding {
   position: relative;
-  background: url("../img/computer-1209641_960_720.jpg") no-repeat;
+  background: url(../img/computer-1209641_960_720.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -31,7 +31,7 @@
 }
 .aboutmelanding {
   position: relative;
-  background: url("../img/IMG_5627.JPG") no-repeat;
+  background: url(../img/IMG_5627.JPG) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -41,7 +41,7 @@
 }
 .experiencelanding {
   position: relative;
-  background: url("../img/experience.jpg") no-repeat;
+  background: url(../img/experience.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -51,7 +51,7 @@
 }
 .contactlanding {
   position: relative;
-  background: url("../img/businessman-2956974_1280.jpg") no-repeat;
+  background: url(../img/businessman-2956974_1280.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -102,7 +102,7 @@
 }
 .bar h3 {
   font-size: 1.4em;
-  font-weight: normal;
+  font-weight: 400;
   margin: 0;
   text-transform: uppercase;
 }
@@ -117,7 +117,6 @@ p {
 #contact {
   width: 100%;
   height: 20%;
-  /*background-color: #1E90FF;*/
   text-align: center;
   padding: 10px 200px 10px 200px;
 }
