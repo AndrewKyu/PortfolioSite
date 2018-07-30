@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const exphbs = require("express-handlebars");
 const path = require("path");
 const nodemailer = require("nodemailer");
+const router = express.Router();
 
 const app = express();
 
@@ -71,8 +72,9 @@ app.post("/send", (req, res) => {
     console.log("Message sent: %s", info.messageId);
     console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
 
-    res.render("index", { msg: "Email has been sent" });
+    // res.render("index", { msg: "Email has been sent" });
   });
+  res.redirect("/");
 });
 
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));

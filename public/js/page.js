@@ -1,6 +1,6 @@
 // //Experience Bar
-(function() {
-  var Progress = function(element) {
+(function () {
+  var Progress = function (element) {
     this.context = element.getContext("2d");
     this.refElement = element.parentNode;
     this.loaded = 0;
@@ -9,20 +9,17 @@
     this.height = this.context.canvas.height;
     this.total = parseInt(this.refElement.dataset.percent, 10);
     this.timer = null;
-
     this.diff = 0;
-
     this.init();
   };
-
   Progress.prototype = {
-    init: function() {
+    init: function () {
       var self = this;
-      self.timer = setInterval(function() {
+      self.timer = setInterval(function () {
         self.run();
       }, 25);
     },
-    run: function() {
+    run: function () {
       var self = this;
 
       self.diff = ((self.loaded / 100) * Math.PI * 2 * 10).toFixed(2);
@@ -31,7 +28,6 @@
       self.context.fillStyle = "#000";
       self.context.strokeStyle = "#d30000";
       self.context.textAlign = "center";
-
       self.context.fillText(
         self.loaded + "%",
         self.width * 0.5,
@@ -52,58 +48,48 @@
       if (self.loaded >= self.total) {
         clearInterval(self.timer);
       }
-
       self.loaded++;
     }
   };
-
-  var CircularSkillBar = function(elements) {
+  var CircularSkillBar = function (elements) {
     this.bars = document.querySelectorAll(elements);
     if (this.bars.length > 0) {
       this.init();
     }
   };
-
   CircularSkillBar.prototype = {
-    init: function() {
+    init: function () {
       this.tick = 25;
       this.progress();
     },
-    progress: function() {
+    progress: function () {
       var self = this;
       var index = 0;
       var firstCanvas = self.bars[0].querySelector("canvas");
       var firstProg = new Progress(firstCanvas);
-
-      var timer = setInterval(function() {
+      var timer = setInterval(function () {
         index++;
-
         var canvas = self.bars[index].querySelector("canvas");
         var prog = new Progress(canvas);
-
         if (index == self.bars.length) {
           clearInterval(timer);
         }
       }, self.tick * 100);
     }
   };
-
-  document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function () {
     var circularBars = new CircularSkillBar("#bars .bar");
   });
 })();
-
-$(document).ready(function() {
+$(document).ready(function () {
   // Add smooth scrolling to all links
-  $("a").on("click", function(event) {
+  $("a").on("click", function (event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
       event.preventDefault();
-
       // Store hash
       var hash = this.hash;
-
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $("html, body").animate(
@@ -111,7 +97,7 @@ $(document).ready(function() {
           scrollTop: $(hash).offset().top
         },
         800,
-        function() {
+        function () {
           // Add hash (#) to URL when done scrolling (default click behavior)
           window.location.hash = hash;
         }
@@ -119,12 +105,10 @@ $(document).ready(function() {
     } // End if
   });
 });
-
 //Scroll to Div
-$(document).ready(function() {
+$(document).ready(function () {
   var scrollLink = $(".scroll");
-
-  scrollLink.click(function(e) {
+  scrollLink.click(function (e) {
     e.preventDefault();
     $("body, html").animate(
       {
