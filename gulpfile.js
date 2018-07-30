@@ -25,12 +25,13 @@ gulp.task("nodemon", cb => {
 //     .pipe(gulp.dest("dist/images"))
 // );
 
-// gulp.task("minify", () =>
-//   gulp
-//     .src("public/js/*.js")
-//     .pipe(uglify())
-//     .pipe(gulp.dest("dist/js"))
-// );
+gulp.task("minify", () =>
+  gulp
+    .src("public/js/*.js")
+    .pipe(uglify())
+    .pipe(concat("compressed.js"))
+    .pipe(gulp.dest("./public/js"))
+);
 
 gulp.task("minify-css", () => {
   return gulp
