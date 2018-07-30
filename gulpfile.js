@@ -4,7 +4,6 @@ const imagemin = require("gulp-imagemin");
 const uglify = require("gulp-uglify");
 const cleanCSS = require("gulp-clean-css");
 const concat = require("gulp-concat");
-
 gulp.task("nodemon", cb => {
   var started = false;
 
@@ -17,14 +16,6 @@ gulp.task("nodemon", cb => {
     }
   });
 });
-
-// gulp.task("imageMin", () =>
-//   gulp
-//     .src("public/img/*")
-//     .pipe(imagemin())
-//     .pipe(gulp.dest("dist/images"))
-// );
-
 gulp.task("minify", () =>
   gulp
     .src("public/js/*.js")
@@ -32,7 +23,6 @@ gulp.task("minify", () =>
     .pipe(concat("compressed.js"))
     .pipe(gulp.dest("./public/js"))
 );
-
 gulp.task("minify-css", () => {
   return gulp
     .src("./public/css/*.css")
