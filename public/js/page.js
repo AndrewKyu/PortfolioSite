@@ -1,15 +1,20 @@
-// //Experience Bar
-jQuery(document).ready(function() {
-  jQuery(".skillbar").each(function() {
-    jQuery(this)
-      .find(".skillbar-bar")
-      .animate(
-        {
-          width: jQuery(this).attr("data-percent")
-        },
-        4000
-      );
-  });
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  var x = $("#skillsSection").position();
+
+  if (y > x.top - 50) {
+    $(".skillbar").each(function() {
+      $(this)
+        .find(".skillbar-bar")
+        .animate(
+          {
+            width: $(this).attr("data-percent")
+          },
+          1000
+        );
+    });
+    console.log("works");
+  }
 });
 //Scroll to Div
 $(document).ready(function() {
