@@ -13,7 +13,6 @@ $(document).scroll(function() {
           1000
         );
     });
-    console.log("works");
   }
 });
 //Scroll to Div
